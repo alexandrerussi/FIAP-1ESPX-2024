@@ -1,0 +1,10 @@
+.youtube {
+    background-color: rgb(200, 0, 0);
+    color: white;
+    border: none;
+    height: 36px;
+    width: 105px;
+    text-transform: uppercase;
+    border-radius: 10px;
+    cursor: pointer;
+}
