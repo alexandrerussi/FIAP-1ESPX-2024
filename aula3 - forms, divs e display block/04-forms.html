@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários em HTML</title>
+</head>
+
+<body>
+
+    <main>
+        <form>
+            <div>
+                <label for="txtNome">Nome: </label>
+                <input type="text" placeholder="Digite seu Nome" id="txtNome" name="txtNome">
+            </div>
+            <div>
+                <label for="txtEmail">E-mail</label>
+                <input type="email" id="txtEmail" name="txtEmail">
+            </div>
+            <div>
+                <label for="txtSenha">Senha</label>
+                <input type="password" id="txtSenha" name="txtSenha">
+            </div>
+            <div>
+                <label for="dataNascimento">Data de nascimento</label>
+                <input type="date" id="dataNascimento" name="dataNascimento">
+            </div>
+            <div>
+                <label for="selectEstado">Selecione seu estado</label>
+                <select id="selectEstado" name="selectEstado">
+                    <option value="sp">São Paulo</option>
+                    <option value="rj">Rio de Janeiro</option>
+                </select>
+            </div>
+
+            <input type="submit" value="Finalizar">
+        </form>
+    </main>
+
+</body>
+
+</html>
