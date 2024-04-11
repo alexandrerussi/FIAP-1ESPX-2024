@@ -1,0 +1,22 @@
+.container {
+    background-color: aquamarine;
+    min-height: 200px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    justify-content: center;
+    align-items: center;
+
+    align-content: flex-start;
+}
+
+.container div {
+    background-color: #25795d;
+    color: white;
+    width: 120px;
+    height: fit-content;
+    font-size: 16px;
+    margin: 5px;
+}
