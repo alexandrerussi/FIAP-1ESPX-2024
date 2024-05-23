@@ -1,0 +1,43 @@
+table {
+    width: 50%;
+    min-width: 500px;
+    border-collapse: collapse;
+}
+
+caption {
+    font-size: 28px;
+    font-weight: 700;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+th, td {
+    text-align: left;
+    padding: 15px;
+}
+
+tr.planos { 
+    background-color: blue;
+}
+
+tr.planos th {
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+tr.preco {
+    background-color: rgb(238, 238, 238);
+}
+
+tr.preco td {
+    color: black;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 28px;
+}
+
+tr.preco .label {
+    font-size: 14px;
+}

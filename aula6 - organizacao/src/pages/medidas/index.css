@@ -9,3 +9,23 @@ div {
 .medida-porcentagem {
     width: 50%;
 }
+
+.sub-grupo {
+    background-color: #fdeaba;
+}
+
+.medida-vw {
+    width: 50vw;
+}
+
+.medida-vh {
+    height: 100vh;
+}
+
+.medida-em {
+    font-size: 2em;
+}
+
+.medida-rem {
+    font-size: 2rem;
+}
