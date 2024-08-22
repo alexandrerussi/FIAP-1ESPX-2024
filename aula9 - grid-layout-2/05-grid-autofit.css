@@ -1,0 +1,16 @@
+.container {
+    width: 80%;
+    margin: 0 auto;
+    border: 10px solid #9f0627;
+
+    display: grid;
+    grid-template-rows: repeat(4, 100px);
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+.item {
+    padding: 10px;
+    background-color: #fe6f8e;
+    color: white;
+    border: 10px solid #ff315e;
+}

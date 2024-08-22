@@ -1,0 +1,19 @@
+.container {
+    width: 80%;
+    margin: 0 auto;
+    border: 10px solid #9f0627;
+
+    display: grid;
+    grid-template-rows: repeat(2, 100px);
+    grid-template-columns: 100px 3fr minmax(100px, 1fr);
+    gap: 10px 30px; /* row column */
+
+    grid-auto-rows: 100px;
+}
+
+.item {
+    padding: 10px;
+    background-color: #fe6f8e;
+    color: white;
+    border: 10px solid #ff315e;
+}
