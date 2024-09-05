@@ -1,0 +1,39 @@
+body {
+    background-color: gray;
+}
+
+main {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+
+    /* width: 800px; */
+    max-width: 800px;
+    min-width: 280px;
+
+    margin: 0 auto;
+}
+
+img {
+    width: 100%;
+}
+
+h1, p {
+    color: rgb(0, 225, 0);
+}
+
+@media screen and (max-width: 1024px) {
+    h1, p {
+        color: rgb(251, 5, 219);
+    }
+    
+    .subtitulo {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    h1, p {
+        color: rgb(143, 63, 213);
+    }
+}
