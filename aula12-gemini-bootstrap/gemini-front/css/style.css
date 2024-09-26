@@ -1,3 +1,35 @@
 main {
     height: 100vh;
 }
+
+#chat-log {
+    width: 90%;
+    background-color: #eaeaea;
+    padding: 5vh;
+    margin: 20px auto;
+    border-radius: 5px;
+}
+
+.message {
+    display: block;
+}
+
+.message--sent {
+    text-align: right;
+    color: rgb(170, 7, 75);
+}
+
+.message--sent::before {
+    content: "Usuário";
+    font-size: 12px;
+}
+
+.message--assistant {
+    text-align: left;
+    margin: 20px 0;
+}
+
+.message--assistant::before {
+    content: "Assistente Gemini";
+    font-size: 12px;
+}
