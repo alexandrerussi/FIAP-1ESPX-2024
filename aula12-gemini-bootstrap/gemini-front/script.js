@@ -43,5 +43,16 @@ form.addEventListener("submit", (event) => {
             messagesGemini
         })
     })
-        .then(res => res.json());
+        .then(res => res.json())
+        .then(data => {
+            console.log(data.chat_completion);
+
+            let messageElement = document.createElement("div");
+            messageElement.classList.add("message");
+            messageElement.classList.add("message--assistant");
+            messageElement.innerHTML = `
+                <div class="message__text">${messageText}</div>
+            `;
+            chatLog.appendChild(messageElement);
+        })
 });

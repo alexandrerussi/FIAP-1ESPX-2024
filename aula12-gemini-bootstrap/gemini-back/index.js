@@ -18,8 +18,25 @@ app.use(cors());
 app.post("/sendMessage", async (req, res) => {
 
     const { messagesGemini } = req.body;
-    console.log(messagesGemini);
-    
+    console.log(messagesGemini[0]);
+
+    // Acessando a API do Gemini via sua API Key
+    const genAI = new GoogleGenerativeAI("AIzaSyCxzm4caMHTFWKiGJS_PQdcPj-AnC6V8XI");
+
+    // Instanciando o modelo
+    const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+
+    // colocando o prompt
+    const prompt = messagesGemini[0].parts[0].text;
+
+    // enviando o prompt para o gemini e ESPERANDO a resposta dele
+    const result = await model.generateContent(prompt);
+    console.log(result.response.text());
+
+    res.json({
+        chat_completion: result.response.text()
+    })
+
 });
 
 app.listen(port, () => {
