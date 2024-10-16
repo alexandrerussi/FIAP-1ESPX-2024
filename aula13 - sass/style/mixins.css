@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 80%;
+  height: 100vh;
+  background-color: #0f006a;
+  margin: 0 auto;
+}
+.container .box {
+  width: 300px;
+  height: 200px;
+  background-color: #d43aff;
+}
+
+/*# sourceMappingURL=mixins.css.map */

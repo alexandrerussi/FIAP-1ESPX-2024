@@ -1,0 +1,17 @@
+@use 'mixinsDefault';
+@use 'variables';
+
+* {
+    @include mixinsDefault.default-config();
+}
+
+.container {
+    @include mixinsDefault.div-size(80%, 100vh);
+    @include mixinsDefault.div-style(variables.$secondary-color);
+    margin: 0 auto;
+
+    .box {
+        @include mixinsDefault.div-size(300px, 200px);
+        @include mixinsDefault.div-style();
+    }
+}
